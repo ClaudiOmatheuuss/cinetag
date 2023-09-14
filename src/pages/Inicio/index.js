@@ -2,7 +2,10 @@ import Cabecalho from "components/Cabecalho";
 import Banner from "components/Banner";
 import Titulo from "components/Titulo";
 import Card from "components/Card";
+import Videos from "json/db.json";
 import Rodape from "components/Rodape";
+import styles from './Inicio.module.css';
+
 
 function Inicio() {
     return (
@@ -12,7 +15,11 @@ function Inicio() {
             <Titulo>
                 <h1>Um lugar para guardar seus vídeos e filmes!</h1>
             </Titulo>
-            <Card id='1' titulo='Gato curioso' capa='https://cdn2.thecatapi.com/images/xPuWATvp9.jpg' />
+            <section className={styles.container}>
+                {Videos.map((video) => {
+                    return <Card {...video} key={video.id} />
+                })}
+            </section>
             <Rodape />
         </>
     )
