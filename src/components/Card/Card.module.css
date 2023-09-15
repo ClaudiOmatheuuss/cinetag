@@ -6,6 +6,7 @@
     margin: .5em 5px;
     padding: 0 0 1em 0;
     width: 282px;
+    transition: 1s;
 }
 
 .capa {
@@ -24,4 +25,8 @@
     color: var(--preto);
     text-align: left;
     text-decoration: none;
+}
+
+.container:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
 }

@@ -2,3 +2,22 @@
     margin: 2em 12em;
     text-align: center;
 }
+
+@media screen and (max-width: 470px) {
+    .container section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container section {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 72%;
+        margin: 14%;
+    }
+}
