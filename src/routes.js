@@ -1,4 +1,5 @@
 import Cabecalho from "components/Cabecalho";
+import Container from "components/Container";
 import Rodape from "components/Rodape";
 import Favoritos from "pages/Favoritos";
 import Inicio from "pages/Inicio";
@@ -8,10 +9,12 @@ function AppRoutes () {
     return (
         <BrowserRouter>
             <Cabecalho />
-            <Routes>
-                <Route path="/" element={<Inicio />}></Route>
-                <Route path="/favoritos" element={<Favoritos />}></Route>
-            </Routes>
+            <Container>
+                <Routes>
+                    <Route path="/" element={<Inicio />}></Route>
+                    <Route path="/favoritos" element={<Favoritos />}></Route>
+                </Routes>
+            </Container>
             <Rodape />
         </BrowserRouter>
     )
