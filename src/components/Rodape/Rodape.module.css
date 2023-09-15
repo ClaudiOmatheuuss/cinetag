@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 .rodape h2 {
@@ -10,4 +12,8 @@
     font-weight: 400;
     font-size: 18px;
     padding: 33px;
+}
+
+.espaco{
+    margin: 20em;
 }
