@@ -15,7 +15,7 @@ function Favoritos () {
             </Titulo>
             <section className={styles.container}>
             {favorito.length === 0 
-                ? <p>Nenhum vídeo favoritado até o momento</p>
+                ? <h2>Nenhum vídeo favoritado até o momento</h2>
                 : favorito.map((fav) => <Card {...fav} key={fav.id} />)
             }
             </section>
