@@ -1,0 +1,11 @@
+.imagem {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1.5px solid var(--preto);
+    border-radius: 100%;
+    box-shadow: 6px 4px 5px rgba(0, 0, 0, .7);
+    background-position: center;
+    height: 340px;
+    width: 340px;
+    margin: 0 auto;
+}
