@@ -6,8 +6,8 @@ function NaoEncontrada () {
     return (
         <section className={styles.container} >
             <h2>Ops!</h2>
-            <div className={styles.capa} style={{ backgroundImage: `url(${naoEncontrado})` }}></div>
-            <p>O conteúdo que você procura não foi encontrado!</p>
+            <div className={styles.imagem} style={{ backgroundImage: `url(${naoEncontrado})` }}></div>
+            <h3>O conteúdo que você procura não foi encontrado!</h3>
         </section>
     )
 }
